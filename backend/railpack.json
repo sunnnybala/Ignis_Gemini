@@ -1,0 +1,15 @@
+{
+  "$schema": "https://schema.railpack.com",
+  "steps": {
+    "setup": {
+      "commands": [
+        "mkdir -p /app/bin",
+        "curl -sSL https://github.com/tectonic-typesetting/tectonic/releases/download/tectonic%400.15.0/tectonic-0.15.0-x86_64-unknown-linux-gnu.tar.gz | tar -xzC /app/bin"
+      ]
+    }
+  },
+  "deploy": {
+    "paths": ["/app/bin"],
+    "aptPackages": ["libgraphite2-3", "libharfbuzz0b", "libicu72", "libfontconfig1"]
+  }
+}

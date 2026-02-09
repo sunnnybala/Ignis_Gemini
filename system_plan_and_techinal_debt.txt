@@ -1,0 +1,16 @@
+1) in athena the images passed from initial paper generation step can be differnt from the ones used in later stages. resulting in user confusion
+2) the athena paper chat doesnt have image access.
+5) no chats storage.  
+6) stale kaggle data, add fingerpints
+7) no canonical storgae for datasets and a single modal volumne for all users currnetly. handle that. 
+8)modal logs are written at the end, not incrrementally
+9) many function sused in multiple places have been implemneted in multiple places. reduce redundancy. 
+10) only png and csv uplaod allowed currnetlt, handle other artifacts like jpeg jpg pt etc too later on
+11) some issue with saving the files, it doesnt save when crtl+s. 
+12) filetree name of file changing, upload files in results called use uplaoded and etc not implemneted yet  
+13)change the naming of files, add the new seed files, esnure they have zero content when seeded |||| UPDATE:Done
+14) llm can call workflow when even one core file is empty, fix this
+15)the job directories are not timestamp, but uuid. fix that
+16) remove auth 
+17) lint, any type errors.
+18) no image passed to paper writing workflow, the complex schema breaks sometime. 
